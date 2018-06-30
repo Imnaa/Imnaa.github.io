@@ -12,6 +12,7 @@
 		</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="css/animate.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
 </head>
 <body>
@@ -19,24 +20,24 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<img class="header-img" src="img/main-img.png" alt="">
+					<img class="header-img wow fadeInLeftBig" src="img/main-img.png" alt="">
 				</div>
 				<!-- /.col-7 -->
 				<div class="col-md-6">
-					<p class="header-pretitle">
+					<p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.1s">
 						Разработчик
 					</p>
-					<h1 class="header-title">
+					<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">
 						Николай Ромащенко
 					</h1>
-					<p class="header-subtitle">
+					<p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s">
 						Программирование на чем-нибудь<br>
 						Быстро и без качества
 					</p>
-					<div class="header-button-block">
-						<button class="header-button">
+					<div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
+						<a href="https://vk.me/imnaa" class="header-button">
 							Связаться
-						</button>
+						</a>
 						<small>
 							*Это бесплатно
 						</small>
@@ -50,7 +51,7 @@
 	</header>
 	<section class="portfolio">
 		<div class="container">
-			<div class="portfolio-block">
+			<div class="portfolio-block  wow flipInX" data-wow-delay="0.5s">
 				<h2 class="portfolio-title">
 					Портфолио
 				</h2>
@@ -115,16 +116,16 @@
 						<p>
 							Подпишитесь:
 						</p>
-						<a href="#">
+						<a href="#" class="wow bounceInDown" data-wow-delay="0.1s">
 							<img src="img/social/vk-button-img.png" alt="">
 						</a>
-						<a href="#">
+						<a href="#" class="wow bounceInDown" data-wow-delay="0.2s">
 							<img src="img/social/facebook-button-img.png" alt="">
 						</a>
-						<a href="#">
+						<a href="#" class="wow bounceInDown" data-wow-delay="0.3s">
 							<img src="img/social/telegram-button-img.png" alt="">
 						</a>
-						<a href="#">
+						<a href="#" class="wow bounceInDown" data-wow-delay="0.4s">
 							<img src="img/social/youtube-button-img.png" alt="">
 						</a>
 					</div>
@@ -135,9 +136,9 @@
 						<p class="footer-cta-text">
 							Напишите мне:
 						</p>
-						<button class="footer-button">
+						<a href="https://vk.me/imnaa" class="footer-button">
 							Написать
-						</button>
+						</a>
 					</div>
 				</div>
 				<!-- /.col-4 -->
@@ -146,5 +147,9 @@
 		</div>
 		<!-- /.container -->
 	</footer>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
 </html>

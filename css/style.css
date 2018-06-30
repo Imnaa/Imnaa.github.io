@@ -26,16 +26,24 @@ header {
 	margin-top: 20px;
 }
 .header-button {
+	display: inline-block;
+	text-decoration: none;
 	width: 202px;
 	height: 52px;
 	box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
 	border-radius: 50px;
 	background-color: #ffffff;
 	color: #072b6f;
-	font-weight: 700;
+	font-weight: 700; 
 	font-size: 18px;
 	margin-top: 32px;
-	padding: 18px 58px, 20px, 56px;
+	padding: 15px 58px;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+.header-button:hover {
+	box-shadow: none;
 }
 header small {
 	font-size: 12px;
@@ -144,6 +152,7 @@ footer {
 }
 .footer-button {
 	display: inline-block;
+	text-decoration: none;
 	border-radius: 50px;
 	border: 1px solid #ffffff;
 	background-color: transparent;
@@ -151,6 +160,15 @@ footer {
 	font-weight: 400;
 	padding: 16px 43px 20px 44px;
 	color: #fff;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+.footer-button:hover {
+	background-color: #fff;
+	border: 1px solid #3a7dfd;
+	color: #3a7dfd;
+	box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
 }
 @media (max-width: 1200px) {
 	.header-pretitle {
