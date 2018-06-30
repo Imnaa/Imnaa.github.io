@@ -14,9 +14,10 @@
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 		<link rel="stylesheet" href="css/animate.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
-	<header>
+	<header id="up">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
@@ -55,9 +56,9 @@
 				<h2 class="portfolio-title">
 					title
 				</h2>
-				<p class="portfolio-subtitle">
+				<!-- <p class="portfolio-subtitle">
 					subtitle
-				</p>
+				</p> -->
 				<div class="row">
 					<div class="col-md-6">
 						<div class="portfolio-col-1">
@@ -136,7 +137,7 @@
 						<p class="footer-cta-text">
 							Напишите мне:
 						</p>
-						<a href="https://vk.me/imnaa" class="footer-button">
+						<a href="mailto:kolya.romashenko@yandex.ru" class="footer-button">
 							Написать
 						</a>
 					</div>
@@ -144,12 +145,32 @@
 				<!-- /.col-4 -->
 			</div>
 			<!-- /.row -->
+			<a href="#up" class="scrollup">^</a>
 		</div>
 		<!-- /.container -->
 	</footer>
 	<script src="js/wow.min.js"></script>
 	<script>
 		new WOW().init();
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		 
+		$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+		$('.scrollup').fadeIn();
+		} else {
+		$('.scrollup').fadeOut();
+		}
+		});
+		 
+		$('.scrollup').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 600);
+		return false;
+		});
+		 
+		});
 	</script>
 </body>
 </html>

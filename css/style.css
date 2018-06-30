@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+}
 body {
 	margin: 0;
 	font-family: 'Roboto';
@@ -7,7 +10,7 @@ img {
 	max-width: 100%;
 }
 header {
-	background-color: #3a7dfd;
+	background-color: #ffa332;
 	color: #fff;
 	padding-top: 59px;
 	padding-bottom: 17px;
@@ -30,10 +33,10 @@ header {
 	text-decoration: none;
 	width: 202px;
 	height: 52px;
-	box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
+	box-shadow: 10px 17px 34px 6px rgba(149, 125, 69, 0.83);
 	border-radius: 50px;
 	background-color: #ffffff;
-	color: #072b6f;
+	color: #946C0E;
 	font-weight: 700; 
 	font-size: 18px;
 	margin-top: 32px;
@@ -44,6 +47,9 @@ header {
 }
 .header-button:hover {
 	box-shadow: none;
+	background-color: #ffa332;
+	border: 1px solid #3a7dfd;
+	color: #ffffff;
 }
 header small {
 	font-size: 12px;
@@ -68,7 +74,6 @@ header small {
 	background-color: #dddddd;
 	padding-top: 42px;
 	padding-bottom: 69px;
-
 }
 .portfolio-block {
 	display: block;
@@ -77,7 +82,7 @@ header small {
 	padding-bottom: 42px;
 }
 .portfolio-block h3 {
-	color: #072b6f;
+	color: #946C0E;
 	font-size: 18px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -90,7 +95,7 @@ header small {
 	padding-right: 0;
 }
 .portfolio-block a {
-	color: #072b6f;
+	color: #946C0E;
 	font-size: 14px;
 	font-weight: 400;
 	text-decoration: underline;
@@ -100,7 +105,7 @@ header small {
 	font-size: 18px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #072b6f;
+	color: #946C0E;
 	margin-bottom: 10px;
 }
 .portfolio-subtitle {
@@ -124,7 +129,7 @@ header small {
 	text-align: center;
 }
 footer {
-	background-color: #3a7dfd;
+	background-color: #ffa332;
 	color: #fff;
 	padding-top: 60px;
 	padding-bottom: 110px;
@@ -167,8 +172,19 @@ footer {
 .footer-button:hover {
 	background-color: #fff;
 	border: 1px solid #3a7dfd;
-	color: #3a7dfd;
-	box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
+	color: #ffa332;
+	box-shadow: 10px 17px 34px 6px rgba(149, 125, 69, 0.83);
+}
+.scrollup {
+	width:40px;
+	height:40px;
+	opacity:0.3;
+	position:fixed;
+	bottom:200px;
+	right:100px;
+	display:none;
+	text-indent:-9999px;
+	background: url('icon_top.png') no-repeat;
 }
 @media (max-width: 1200px) {
 	.header-pretitle {
