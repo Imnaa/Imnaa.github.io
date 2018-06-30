@@ -14,28 +14,27 @@
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 		<link rel="stylesheet" href="css/animate.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
 	<header id="up">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<img class="header-img wow fadeInLeftBig" src="img/main-img.png" alt="">
+					<img class="header-img wow zoomIn" src="img/imac--smart-object-.png" alt="">
 				</div>
 				<!-- /.col-7 -->
 				<div class="col-md-6">
-					<p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.1s">
+					<p class="header-pretitle wow fadeInRight" data-wow-delay="0.1s">
 						Разработчик
 					</p>
-					<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">
+					<h1 class="header-title wow fadeInRight" data-wow-delay="0.2s">
 						Николай Ромащенко
 					</h1>
-					<p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s">
+					<p class="header-subtitle wow fadeInRight" data-wow-delay="0.3s">
 						Программирование на чем-нибудь<br>
 						Быстро и без качества
 					</p>
-					<div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
+					<div class="header-button-block wow jackInTheBox" data-wow-delay="0.4s">
 						<a href="https://vk.me/imnaa" class="header-button">
 							Связаться
 						</a>
@@ -62,7 +61,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="portfolio-col-1">
-							<img src="img/portfolio/portfolio-img-0.jpg" alt="work1">
+							<img class="wow zoomIn" data-wow-delay="0.7s" src="img/portfolio/portfolio-img-0.jpg" alt="work1">
 							<h3>
 								Заголовок
 							</h3>
@@ -78,7 +77,7 @@
 					<!-- /.col-6 -->
 					<div class="col-md-6">
 						<div class="portfolio-col-2">
-							<img src="img/portfolio/portfolio-img-1.jpg" alt="work2">
+							<img class="wow zoomIn" data-wow-delay="0.7s" src="img/portfolio/portfolio-img-1.jpg" alt="work2">
 							<h3>
 								Заголовок
 							</h3>
@@ -117,16 +116,16 @@
 						<p>
 							Подпишитесь:
 						</p>
-						<a href="#" class="wow bounceInDown" data-wow-delay="0.1s">
+						<a href="#" class="wow rotateIn" data-wow-delay="0.2s">
 							<img src="img/social/vk-button-img.png" alt="">
 						</a>
-						<a href="#" class="wow bounceInDown" data-wow-delay="0.2s">
+						<a href="#" class="wow rotateIn" data-wow-delay="0.3s">
 							<img src="img/social/facebook-button-img.png" alt="">
 						</a>
-						<a href="#" class="wow bounceInDown" data-wow-delay="0.3s">
+						<a href="#" class="wow rotateIn" data-wow-delay="0.4s">
 							<img src="img/social/telegram-button-img.png" alt="">
 						</a>
-						<a href="#" class="wow bounceInDown" data-wow-delay="0.4s">
+						<a href="#" class="wow rotateIn" data-wow-delay="0.5s">
 							<img src="img/social/youtube-button-img.png" alt="">
 						</a>
 					</div>
@@ -137,7 +136,7 @@
 						<p class="footer-cta-text">
 							Напишите мне:
 						</p>
-						<a href="mailto:kolya.romashenko@yandex.ru" class="footer-button">
+						<a href="mailto:kolya.romashenko@yandex.ru" class="footer-button wow swing" data-wow-delay="0.5s">
 							Написать
 						</a>
 					</div>
@@ -145,32 +144,18 @@
 				<!-- /.col-4 -->
 			</div>
 			<!-- /.row -->
-			<a href="#up" class="scrollup">^</a>
+			<div class="footer-up wow flipInX" data-wow-delay="1.0s"  >
+		 		<div class="footer-arrow">
+		 			<a href="#up"><img src="img/icon-arrow.png" alt="Вверх">
+		 			</a>
+		 		</div>
+ 			</div>
 		</div>
 		<!-- /.container -->
 	</footer>
 	<script src="js/wow.min.js"></script>
 	<script>
 		new WOW().init();
-	</script>
-
-	<script type="text/javascript">
-		$(document).ready(function(){
-		 
-		$(window).scroll(function(){
-		if ($(this).scrollTop() > 100) {
-		$('.scrollup').fadeIn();
-		} else {
-		$('.scrollup').fadeOut();
-		}
-		});
-		 
-		$('.scrollup').click(function(){
-		$("html, body").animate({ scrollTop: 0 }, 600);
-		return false;
-		});
-		 
-		});
 	</script>
 </body>
 </html>
